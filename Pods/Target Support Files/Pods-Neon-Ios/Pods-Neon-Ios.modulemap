@@ -1,0 +1,6 @@
+framework module Pods_Neon_Ios {
+  umbrella header "Pods-Neon-Ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

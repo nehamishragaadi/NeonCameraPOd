@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14838BDC6EFEE8D7E748A230 /* Pods_Neon_Ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD7D1D408386C54A3805665 /* Pods_Neon_Ios.framework */; };
+		8033A2E6225EFAC30027D4FF /* OpenNeutralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033A2E5225EFAC30027D4FF /* OpenNeutralViewController.swift */; };
+		8033A2E8225F51070027D4FF /* CameraOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033A2E7225F51070027D4FF /* CameraOnlyViewController.swift */; };
+		8033A2EA225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033A2E9225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift */; };
+		8033A2EC22606D9C0027D4FF /* drop-down-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8033A2EB22606D9B0027D4FF /* drop-down-arrow.png */; };
+		8034EC3A227193B6004ADFB3 /* Neon_Camera_App.h in Headers */ = {isa = PBXBuildFile; fileRef = 8034EC2A227193B6004ADFB3 /* Neon_Camera_App.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8034EC3D227193B6004ADFB3 /* Neon_Camera_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8034EC28227193B6004ADFB3 /* Neon_Camera_App.framework */; };
+		8034EC3E227193B6004ADFB3 /* Neon_Camera_App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8034EC28227193B6004ADFB3 /* Neon_Camera_App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C42A6CB1220D3ADF00253CAE /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CB0220D3ADF00253CAE /* GalleryModel.swift */; };
+		C42A6CB3220D3AEF00253CAE /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CB2220D3AEF00253CAE /* CameraModel.swift */; };
+		C42A6CB5220D3B0400253CAE /* NeutralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CB4220D3B0400253CAE /* NeutralModel.swift */; };
+		C42A6CB7220D4F2000253CAE /* NeonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CB6220D4F2000253CAE /* NeonResponse.swift */; };
+		C42A6CB9220D67F700253CAE /* OnImageCollectionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CB8220D67F700253CAE /* OnImageCollectionListener.swift */; };
+		C42A6CBB220D689900253CAE /* LivePhotosListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CBA220D689900253CAE /* LivePhotosListener.swift */; };
+		C42A6CBD220D69C200253CAE /* NeonImagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CBC220D69C200253CAE /* NeonImagesHandler.swift */; };
+		C42A6CBF220D7BBE00253CAE /* LivePhotoNextTagListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A6CBE220D7BBE00253CAE /* LivePhotoNextTagListener.swift */; };
+		C4ECBFCF220C304B00D06484 /* IParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFCE220C304B00D06484 /* IParam.swift */; };
+		C4ECBFD1220C32C000D06484 /* CustomParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFD0220C32C000D06484 /* CustomParameters.swift */; };
+		C4ECBFD3220C413900D06484 /* ICameraParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFD2220C413900D06484 /* ICameraParam.swift */; };
+		C4ECBFD5220C41B900D06484 /* CameraOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFD4220C41B900D06484 /* CameraOrientation.swift */; };
+		C4ECBFD7220C427C00D06484 /* CameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFD6220C427C00D06484 /* CameraType.swift */; };
+		C4ECBFD9220C430400D06484 /* GalleryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFD8220C430400D06484 /* GalleryType.swift */; };
+		C4ECBFDB220C434700D06484 /* IGalleryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFDA220C434700D06484 /* IGalleryParam.swift */; };
+		C4ECBFDD220C443900D06484 /* INeutralParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFDC220C443900D06484 /* INeutralParam.swift */; };
+		C4ECBFDF220C481500D06484 /* LibraryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFDE220C481500D06484 /* LibraryMode.swift */; };
+		C4ECBFE1220C559800D06484 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECBFE0220C559800D06484 /* PhotosModel.swift */; };
+		FA2925AC21EF585600D4E6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2925AB21EF585600D4E6A0 /* AppDelegate.swift */; };
+		FA2925AE21EF585600D4E6A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2925AD21EF585600D4E6A0 /* ViewController.swift */; };
+		FA2925B121EF585600D4E6A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2925AF21EF585600D4E6A0 /* Main.storyboard */; };
+		FA2925B321EF586000D4E6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2925B221EF586000D4E6A0 /* Assets.xcassets */; };
+		FA2925B621EF586100D4E6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2925B421EF586100D4E6A0 /* LaunchScreen.storyboard */; };
+		FA305D722201746300F82EFF /* ImageTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA305D712201746300F82EFF /* ImageTagModel.swift */; };
+		FA363BEC21F03E1500530E58 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA363BEB21F03E1500530E58 /* CameraViewController.swift */; };
+		FA4014F92209579300DD59FF /* CameraFacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4014F82209579300DD59FF /* CameraFacing.swift */; };
+		FA4014FB220957C900DD59FF /* FlashMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4014FA220957C900DD59FF /* FlashMode.swift */; };
+		FA4014FD2209587F00DD59FF /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4014FC2209587F00DD59FF /* ResponseCode.swift */; };
+		FA4015022209614B00DD59FF /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4015012209614B00DD59FF /* Serializable.swift */; };
+		FA4015052209629D00DD59FF /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4015042209629D00DD59FF /* FileInfo.swift */; };
+		FA40150722098CB500DD59FF /* GetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40150622098CB500DD59FF /* GetLocation.swift */; };
+		FADDC2F121FF011E00E20A2E /* MyImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDC2F021FF011E00E20A2E /* MyImageCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8034EC3B227193B6004ADFB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2925A021EF585500D4E6A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8034EC27227193B6004ADFB3;
+			remoteInfo = "Neon-Camera App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8034EC44227193B7004ADFB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8034EC3E227193B6004ADFB3 /* Neon_Camera_App.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6660A2466EBE34BC22199916 /* Pods-Neon-Ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-Ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios.debug.xcconfig"; sourceTree = "<group>"; };
+		8033A2E5225EFAC30027D4FF /* OpenNeutralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenNeutralViewController.swift; sourceTree = "<group>"; };
+		8033A2E7225F51070027D4FF /* CameraOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOnlyViewController.swift; sourceTree = "<group>"; };
+		8033A2E9225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImgCameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		8033A2EB22606D9B0027D4FF /* drop-down-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drop-down-arrow.png"; sourceTree = "<group>"; };
+		8034EC28227193B6004ADFB3 /* Neon_Camera_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Neon_Camera_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8034EC2A227193B6004ADFB3 /* Neon_Camera_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Neon_Camera_App.h; sourceTree = "<group>"; };
+		8034EC2B227193B6004ADFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8034EC37227193B6004ADFB3 /* Neon_Camera_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neon_Camera_AppTests.swift; sourceTree = "<group>"; };
+		8034EC39227193B6004ADFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E128639FCC89406448B062 /* Pods-Neon-IosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-IosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-IosUITests/Pods-Neon-IosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		945AC996C66959CA0AEB10A0 /* Pods-Neon-Ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-Ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios.release.xcconfig"; sourceTree = "<group>"; };
+		B728C9960015F026D1EA858E /* Pods-Neon-IosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-IosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-IosTests/Pods-Neon-IosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F15B5217B714B214FCCB71 /* Pods-Neon-IosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-IosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-IosTests/Pods-Neon-IosTests.release.xcconfig"; sourceTree = "<group>"; };
+		C42A6CB0220D3ADF00253CAE /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		C42A6CB2220D3AEF00253CAE /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		C42A6CB4220D3B0400253CAE /* NeutralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralModel.swift; sourceTree = "<group>"; };
+		C42A6CB6220D4F2000253CAE /* NeonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonResponse.swift; sourceTree = "<group>"; };
+		C42A6CB8220D67F700253CAE /* OnImageCollectionListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnImageCollectionListener.swift; sourceTree = "<group>"; };
+		C42A6CBA220D689900253CAE /* LivePhotosListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotosListener.swift; sourceTree = "<group>"; };
+		C42A6CBC220D69C200253CAE /* NeonImagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonImagesHandler.swift; sourceTree = "<group>"; };
+		C42A6CBE220D7BBE00253CAE /* LivePhotoNextTagListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoNextTagListener.swift; sourceTree = "<group>"; };
+		C4ECBFCE220C304B00D06484 /* IParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParam.swift; sourceTree = "<group>"; };
+		C4ECBFD0220C32C000D06484 /* CustomParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParameters.swift; sourceTree = "<group>"; };
+		C4ECBFD2220C413900D06484 /* ICameraParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICameraParam.swift; sourceTree = "<group>"; };
+		C4ECBFD4220C41B900D06484 /* CameraOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrientation.swift; sourceTree = "<group>"; };
+		C4ECBFD6220C427C00D06484 /* CameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraType.swift; sourceTree = "<group>"; };
+		C4ECBFD8220C430400D06484 /* GalleryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryType.swift; sourceTree = "<group>"; };
+		C4ECBFDA220C434700D06484 /* IGalleryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGalleryParam.swift; sourceTree = "<group>"; };
+		C4ECBFDC220C443900D06484 /* INeutralParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INeutralParam.swift; sourceTree = "<group>"; };
+		C4ECBFDE220C481500D06484 /* LibraryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryMode.swift; sourceTree = "<group>"; };
+		C4ECBFE0220C559800D06484 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		CB6AD6234E5C108A16EBB17A /* Pods-Neon-IosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neon-IosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neon-IosUITests/Pods-Neon-IosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CDBF49CEACB19B31DD0899B1 /* Pods_Neon_IosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neon_IosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26F253EBE4CDC5A13D17133 /* Pods_Neon_IosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neon_IosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD7D1D408386C54A3805665 /* Pods_Neon_Ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neon_Ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2925A821EF585600D4E6A0 /* Neon-Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neon-Ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2925AB21EF585600D4E6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA2925AD21EF585600D4E6A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA2925B021EF585600D4E6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA2925B221EF586000D4E6A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2925B521EF586100D4E6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA2925B721EF586100D4E6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2925C021EF586100D4E6A0 /* Neon_IosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neon_IosTests.swift; sourceTree = "<group>"; };
+		FA2925C221EF586100D4E6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2925CB21EF586100D4E6A0 /* Neon_IosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neon_IosUITests.swift; sourceTree = "<group>"; };
+		FA2925CD21EF586100D4E6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA305D712201746300F82EFF /* ImageTagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTagModel.swift; sourceTree = "<group>"; };
+		FA363BEB21F03E1500530E58 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FA4014F82209579300DD59FF /* CameraFacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFacing.swift; sourceTree = "<group>"; };
+		FA4014FA220957C900DD59FF /* FlashMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashMode.swift; sourceTree = "<group>"; };
+		FA4014FC2209587F00DD59FF /* ResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCode.swift; sourceTree = "<group>"; };
+		FA4015012209614B00DD59FF /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		FA4015042209629D00DD59FF /* FileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
+		FA40150622098CB500DD59FF /* GetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocation.swift; sourceTree = "<group>"; };
+		FADDC2F021FF011E00E20A2E /* MyImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8034EC25227193B6004ADFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2925A521EF585600D4E6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14838BDC6EFEE8D7E748A230 /* Pods_Neon_Ios.framework in Frameworks */,
+				8034EC3D227193B6004ADFB3 /* Neon_Camera_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D04B466AF49F0CB26AD3F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7D1D408386C54A3805665 /* Pods_Neon_Ios.framework */,
+				E26F253EBE4CDC5A13D17133 /* Pods_Neon_IosTests.framework */,
+				CDBF49CEACB19B31DD0899B1 /* Pods_Neon_IosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8034EBFB227029E5004ADFB3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA2925AD21EF585600D4E6A0 /* ViewController.swift */,
+				8033A2E5225EFAC30027D4FF /* OpenNeutralViewController.swift */,
+				FA363BEB21F03E1500530E58 /* CameraViewController.swift */,
+				8033A2E7225F51070027D4FF /* CameraOnlyViewController.swift */,
+				8033A2E9225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8034EC29227193B6004ADFB3 /* Neon-Camera App */ = {
+			isa = PBXGroup;
+			children = (
+				8034EC2A227193B6004ADFB3 /* Neon_Camera_App.h */,
+				8034EC2B227193B6004ADFB3 /* Info.plist */,
+			);
+			path = "Neon-Camera App";
+			sourceTree = "<group>";
+		};
+		8034EC36227193B6004ADFB3 /* Neon-Camera AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8034EC37227193B6004ADFB3 /* Neon_Camera_AppTests.swift */,
+				8034EC39227193B6004ADFB3 /* Info.plist */,
+			);
+			path = "Neon-Camera AppTests";
+			sourceTree = "<group>";
+		};
+		D2F5500111F04DC86BB390BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6660A2466EBE34BC22199916 /* Pods-Neon-Ios.debug.xcconfig */,
+				945AC996C66959CA0AEB10A0 /* Pods-Neon-Ios.release.xcconfig */,
+				B728C9960015F026D1EA858E /* Pods-Neon-IosTests.debug.xcconfig */,
+				B9F15B5217B714B214FCCB71 /* Pods-Neon-IosTests.release.xcconfig */,
+				81E128639FCC89406448B062 /* Pods-Neon-IosUITests.debug.xcconfig */,
+				CB6AD6234E5C108A16EBB17A /* Pods-Neon-IosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA29259F21EF585500D4E6A0 = {
+			isa = PBXGroup;
+			children = (
+				FA2925AA21EF585600D4E6A0 /* Neon-Ios */,
+				FA2925BF21EF586100D4E6A0 /* Neon-IosTests */,
+				FA2925CA21EF586100D4E6A0 /* Neon-IosUITests */,
+				8034EC29227193B6004ADFB3 /* Neon-Camera App */,
+				8034EC36227193B6004ADFB3 /* Neon-Camera AppTests */,
+				FA2925A921EF585600D4E6A0 /* Products */,
+				D2F5500111F04DC86BB390BE /* Pods */,
+				43D04B466AF49F0CB26AD3F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2925A921EF585600D4E6A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2925A821EF585600D4E6A0 /* Neon-Ios.app */,
+				8034EC28227193B6004ADFB3 /* Neon_Camera_App.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2925AA21EF585600D4E6A0 /* Neon-Ios */ = {
+			isa = PBXGroup;
+			children = (
+				FA4015032209628400DD59FF /* util */,
+				FA4015002209612A00DD59FF /* Protocols */,
+				FA4014F522093E6100DD59FF /* Enumerations */,
+				FA305D702201742100F82EFF /* Model */,
+				FA2925AB21EF585600D4E6A0 /* AppDelegate.swift */,
+				8033A2EB22606D9B0027D4FF /* drop-down-arrow.png */,
+				8034EBFB227029E5004ADFB3 /* ViewController */,
+				FA2925AF21EF585600D4E6A0 /* Main.storyboard */,
+				FA2925B221EF586000D4E6A0 /* Assets.xcassets */,
+				FA2925B421EF586100D4E6A0 /* LaunchScreen.storyboard */,
+				FA2925B721EF586100D4E6A0 /* Info.plist */,
+				FADDC2F021FF011E00E20A2E /* MyImageCell.swift */,
+			);
+			path = "Neon-Ios";
+			sourceTree = "<group>";
+		};
+		FA2925BF21EF586100D4E6A0 /* Neon-IosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2925C021EF586100D4E6A0 /* Neon_IosTests.swift */,
+				FA2925C221EF586100D4E6A0 /* Info.plist */,
+			);
+			path = "Neon-IosTests";
+			sourceTree = "<group>";
+		};
+		FA2925CA21EF586100D4E6A0 /* Neon-IosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2925CB21EF586100D4E6A0 /* Neon_IosUITests.swift */,
+				FA2925CD21EF586100D4E6A0 /* Info.plist */,
+			);
+			path = "Neon-IosUITests";
+			sourceTree = "<group>";
+		};
+		FA305D702201742100F82EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA305D712201746300F82EFF /* ImageTagModel.swift */,
+				C4ECBFE0220C559800D06484 /* PhotosModel.swift */,
+				C42A6CB0220D3ADF00253CAE /* GalleryModel.swift */,
+				C42A6CB2220D3AEF00253CAE /* CameraModel.swift */,
+				C42A6CB4220D3B0400253CAE /* NeutralModel.swift */,
+				C42A6CB6220D4F2000253CAE /* NeonResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA4014F522093E6100DD59FF /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				FA4014F82209579300DD59FF /* CameraFacing.swift */,
+				FA4014FA220957C900DD59FF /* FlashMode.swift */,
+				FA4014FC2209587F00DD59FF /* ResponseCode.swift */,
+				C4ECBFD4220C41B900D06484 /* CameraOrientation.swift */,
+				C4ECBFD6220C427C00D06484 /* CameraType.swift */,
+				C4ECBFD8220C430400D06484 /* GalleryType.swift */,
+				C4ECBFDE220C481500D06484 /* LibraryMode.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		FA4015002209612A00DD59FF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA4015012209614B00DD59FF /* Serializable.swift */,
+				C4ECBFCE220C304B00D06484 /* IParam.swift */,
+				C4ECBFD2220C413900D06484 /* ICameraParam.swift */,
+				C4ECBFDA220C434700D06484 /* IGalleryParam.swift */,
+				C4ECBFDC220C443900D06484 /* INeutralParam.swift */,
+				C42A6CB8220D67F700253CAE /* OnImageCollectionListener.swift */,
+				C42A6CBA220D689900253CAE /* LivePhotosListener.swift */,
+				C42A6CBE220D7BBE00253CAE /* LivePhotoNextTagListener.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA4015032209628400DD59FF /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FA4015042209629D00DD59FF /* FileInfo.swift */,
+				FA40150622098CB500DD59FF /* GetLocation.swift */,
+				C4ECBFD0220C32C000D06484 /* CustomParameters.swift */,
+				C42A6CBC220D69C200253CAE /* NeonImagesHandler.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8034EC23227193B6004ADFB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8034EC3A227193B6004ADFB3 /* Neon_Camera_App.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8034EC27227193B6004ADFB3 /* Neon-Camera App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8034EC43227193B7004ADFB3 /* Build configuration list for PBXNativeTarget "Neon-Camera App" */;
+			buildPhases = (
+				8034EC23227193B6004ADFB3 /* Headers */,
+				8034EC24227193B6004ADFB3 /* Sources */,
+				8034EC25227193B6004ADFB3 /* Frameworks */,
+				8034EC26227193B6004ADFB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neon-Camera App";
+			productName = "Neon-Camera App";
+			productReference = 8034EC28227193B6004ADFB3 /* Neon_Camera_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA2925A721EF585600D4E6A0 /* Neon-Ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2925D021EF586100D4E6A0 /* Build configuration list for PBXNativeTarget "Neon-Ios" */;
+			buildPhases = (
+				C991B14EDB2E0DD9C28F6EA0 /* [CP] Check Pods Manifest.lock */,
+				FA2925A421EF585600D4E6A0 /* Sources */,
+				FA2925A521EF585600D4E6A0 /* Frameworks */,
+				FA2925A621EF585600D4E6A0 /* Resources */,
+				9F9B30321761174A27EF97CD /* [CP] Embed Pods Frameworks */,
+				8034EC44227193B7004ADFB3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8034EC3C227193B6004ADFB3 /* PBXTargetDependency */,
+			);
+			name = "Neon-Ios";
+			productName = "Neon-Ios";
+			productReference = FA2925A821EF585600D4E6A0 /* Neon-Ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2925A021EF585500D4E6A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Girnar;
+				TargetAttributes = {
+					8034EC27227193B6004ADFB3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FA2925A721EF585600D4E6A0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = FA2925A321EF585500D4E6A0 /* Build configuration list for PBXProject "Neon-Ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA29259F21EF585500D4E6A0;
+			productRefGroup = FA2925A921EF585600D4E6A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2925A721EF585600D4E6A0 /* Neon-Ios */,
+				8034EC27227193B6004ADFB3 /* Neon-Camera App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8034EC26227193B6004ADFB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2925A621EF585600D4E6A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8033A2EC22606D9C0027D4FF /* drop-down-arrow.png in Resources */,
+				FA2925B621EF586100D4E6A0 /* LaunchScreen.storyboard in Resources */,
+				FA2925B321EF586000D4E6A0 /* Assets.xcassets in Resources */,
+				FA2925B121EF585600D4E6A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F9B30321761174A27EF97CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C991B14EDB2E0DD9C28F6EA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neon-Ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8034EC24227193B6004ADFB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2925A421EF585600D4E6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ECBFDD220C443900D06484 /* INeutralParam.swift in Sources */,
+				C42A6CB5220D3B0400253CAE /* NeutralModel.swift in Sources */,
+				C42A6CB9220D67F700253CAE /* OnImageCollectionListener.swift in Sources */,
+				FA305D722201746300F82EFF /* ImageTagModel.swift in Sources */,
+				C42A6CB7220D4F2000253CAE /* NeonResponse.swift in Sources */,
+				C42A6CBB220D689900253CAE /* LivePhotosListener.swift in Sources */,
+				FA2925AE21EF585600D4E6A0 /* ViewController.swift in Sources */,
+				FADDC2F121FF011E00E20A2E /* MyImageCell.swift in Sources */,
+				FA4015022209614B00DD59FF /* Serializable.swift in Sources */,
+				FA4014F92209579300DD59FF /* CameraFacing.swift in Sources */,
+				8033A2E8225F51070027D4FF /* CameraOnlyViewController.swift in Sources */,
+				C42A6CBD220D69C200253CAE /* NeonImagesHandler.swift in Sources */,
+				C4ECBFDF220C481500D06484 /* LibraryMode.swift in Sources */,
+				C4ECBFD5220C41B900D06484 /* CameraOrientation.swift in Sources */,
+				C42A6CB1220D3ADF00253CAE /* GalleryModel.swift in Sources */,
+				8033A2EA225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift in Sources */,
+				C4ECBFD7220C427C00D06484 /* CameraType.swift in Sources */,
+				FA2925AC21EF585600D4E6A0 /* AppDelegate.swift in Sources */,
+				FA4014FB220957C900DD59FF /* FlashMode.swift in Sources */,
+				FA363BEC21F03E1500530E58 /* CameraViewController.swift in Sources */,
+				FA40150722098CB500DD59FF /* GetLocation.swift in Sources */,
+				C4ECBFCF220C304B00D06484 /* IParam.swift in Sources */,
+				8033A2E6225EFAC30027D4FF /* OpenNeutralViewController.swift in Sources */,
+				C4ECBFE1220C559800D06484 /* PhotosModel.swift in Sources */,
+				C4ECBFD3220C413900D06484 /* ICameraParam.swift in Sources */,
+				FA4014FD2209587F00DD59FF /* ResponseCode.swift in Sources */,
+				C4ECBFDB220C434700D06484 /* IGalleryParam.swift in Sources */,
+				C42A6CBF220D7BBE00253CAE /* LivePhotoNextTagListener.swift in Sources */,
+				C42A6CB3220D3AEF00253CAE /* CameraModel.swift in Sources */,
+				C4ECBFD9220C430400D06484 /* GalleryType.swift in Sources */,
+				FA4015052209629D00DD59FF /* FileInfo.swift in Sources */,
+				C4ECBFD1220C32C000D06484 /* CustomParameters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8034EC3C227193B6004ADFB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8034EC27227193B6004ADFB3 /* Neon-Camera App */;
+			targetProxy = 8034EC3B227193B6004ADFB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA2925AF21EF585600D4E6A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2925B021EF585600D4E6A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2925B421EF586100D4E6A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2925B521EF586100D4E6A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8034EC3F227193B7004ADFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C5X5Y4ZL4U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Neon-Camera App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cardekho.Neon-Camera-App";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8034EC40227193B7004ADFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C5X5Y4ZL4U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Neon-Camera App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cardekho.Neon-Camera-App";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA2925CE21EF586100D4E6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA2925CF21EF586100D4E6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA2925D121EF586100D4E6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6660A2466EBE34BC22199916 /* Pods-Neon-Ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5X5Y4ZL4U;
+				INFOPLIST_FILE = "Neon-Ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.girnarsoft.Neon-Ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA2925D221EF586100D4E6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945AC996C66959CA0AEB10A0 /* Pods-Neon-Ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5X5Y4ZL4U;
+				INFOPLIST_FILE = "Neon-Ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.girnarsoft.Neon-Ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8034EC43227193B7004ADFB3 /* Build configuration list for PBXNativeTarget "Neon-Camera App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8034EC3F227193B7004ADFB3 /* Debug */,
+				8034EC40227193B7004ADFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2925A321EF585500D4E6A0 /* Build configuration list for PBXProject "Neon-Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2925CE21EF586100D4E6A0 /* Debug */,
+				FA2925CF21EF586100D4E6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2925D021EF586100D4E6A0 /* Build configuration list for PBXNativeTarget "Neon-Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2925D121EF586100D4E6A0 /* Debug */,
+				FA2925D221EF586100D4E6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2925A021EF585500D4E6A0 /* Project object */;
+}

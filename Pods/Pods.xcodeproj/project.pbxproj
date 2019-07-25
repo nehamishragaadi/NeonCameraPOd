@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2C5D26B7EDB4EEA1A2B348467DF3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		2600A4723C7DB41798CD893DDBB9996C /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FB457CFC8B6D1D8E5024DC51A5637 /* UIView+Helper.swift */; };
+		2F3FC07A5ACEDA7F06B3A867655DA82C /* OpalImagePickerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5DE8E895B14EEF0B470D72863FC956 /* OpalImagePickerRootViewController.swift */; };
+		3205BFE4CBB5D54980BB9F526C07C47A /* OpalImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B05F8DC83D49640DAF6B89321036D1 /* OpalImagePicker-dummy.m */; };
+		54DC25F509F1D7E1AE7C0CEA2C227A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965CB56949562C448311C9269A1FA278 /* Assets.xcassets */; };
+		631C9A541D2D1B96648153E3307FFB1B /* Pods-Neon-Ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D39FDC1B79986FC767B5E9AB913607 /* Pods-Neon-Ios-dummy.m */; };
+		7BF56AAA6CDC85C518857C55D9E2D704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7F9889F9FE338276600C5A973AE99840 /* OpalImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F8E8C92CB80DEA718350F03111ADC /* OpalImagePickerController.swift */; };
+		97F3BDE792581EE714F299A5F4DD8B9A /* OpalImagePickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B1B550169DC9B19E855DEFCE94A70F6 /* OpalImagePickerResources.bundle */; };
+		9C7C8A1CF836905B24067AC094520365 /* TimeInterval+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DF8E9B0A6FDAA1C2F4184CF0D2E51E /* TimeInterval+String.swift */; };
+		A310A9C50351447E85AE96A80D40B293 /* UIViewController+OpalImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5BB9CFF6BBA563DF3327ED69464C1 /* UIViewController+OpalImagePicker.swift */; };
+		AF65459622DD6E57390655A8C200C11B /* OpalImagePickerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2978C7ED71B58CA862125DF25C39AA /* OpalImagePickerCollectionViewLayout.swift */; };
+		B864E097A6D2DA309A0F627C93FFDB28 /* OpalImagePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5434ACB53570B9BE4FEC7E9C51EEA /* OpalImagePickerConfiguration.swift */; };
+		C2635D2A22C8C264823CA3A36723D7FF /* Pods-Neon-Ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D5AC9AEF22D93E0E53513B654306A3 /* Pods-Neon-Ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E84BC6DFF0977BAF3168F7CDA6D09915 /* OpalImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA20DA4B039FA794FE3650C691B28ABA /* OpalImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAB8D9720CAF2071E8D78A9B9885C930 /* Bundle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C97EC05C72DA7E319B11B4C80D97BC /* Bundle+Helper.swift */; };
+		FDFFE10E987082D7FBB85BB46F733BBF /* ImagePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CCE615076C7BF21CB1AC518A8C57A /* ImagePickerCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71E7BDF6BFDC320692869ACD37B413F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B86EB387CB52E290B55FBEE654C289;
+			remoteInfo = OpalImagePicker;
+		};
+		9E2D76C20094884379BE73E062C12505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2785D5CF7DFC28AD2B2980527A89BEC;
+			remoteInfo = "OpalImagePicker-OpalImagePickerResources";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15C0FF37F0F54D964E31F51F5E99C880 /* Pods-Neon-Ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Neon-Ios.debug.xcconfig"; sourceTree = "<group>"; };
+		1D2978C7ED71B58CA862125DF25C39AA /* OpalImagePickerCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpalImagePickerCollectionViewLayout.swift; path = OpalImagePicker/Source/OpalImagePickerCollectionViewLayout.swift; sourceTree = "<group>"; };
+		214F8E8C92CB80DEA718350F03111ADC /* OpalImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpalImagePickerController.swift; path = OpalImagePicker/Source/OpalImagePickerController.swift; sourceTree = "<group>"; };
+		2A3FE0207DD2A07113546DD213ACCA96 /* Pods-Neon-Ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Neon-Ios-frameworks.sh"; sourceTree = "<group>"; };
+		2DB5BB9CFF6BBA563DF3327ED69464C1 /* UIViewController+OpalImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+OpalImagePicker.swift"; path = "OpalImagePicker/Source/UIViewController+OpalImagePicker.swift"; sourceTree = "<group>"; };
+		35A2522BACC93E4ABABCD6997107452F /* OpalImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpalImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		489FB457CFC8B6D1D8E5024DC51A5637 /* UIView+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Helper.swift"; path = "OpalImagePicker/Source/UIView+Helper.swift"; sourceTree = "<group>"; };
+		505ADCE5CF3156424FD53AFE8F6EF351 /* Pods-Neon-Ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Neon-Ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D5DE8E895B14EEF0B470D72863FC956 /* OpalImagePickerRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpalImagePickerRootViewController.swift; path = OpalImagePicker/Source/OpalImagePickerRootViewController.swift; sourceTree = "<group>"; };
+		635F158AD0EC0809CB10D4515B2ED627 /* ResourceBundle-OpalImagePickerResources-OpalImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OpalImagePickerResources-OpalImagePicker-Info.plist"; sourceTree = "<group>"; };
+		64DF8E9B0A6FDAA1C2F4184CF0D2E51E /* TimeInterval+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+String.swift"; path = "OpalImagePicker/Source/TimeInterval+String.swift"; sourceTree = "<group>"; };
+		6AD37E051AB16EE90B169EF4220E5A18 /* Pods-Neon-Ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Neon-Ios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70C97EC05C72DA7E319B11B4C80D97BC /* Bundle+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Helper.swift"; path = "OpalImagePicker/Source/Bundle+Helper.swift"; sourceTree = "<group>"; };
+		72D5434ACB53570B9BE4FEC7E9C51EEA /* OpalImagePickerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpalImagePickerConfiguration.swift; path = OpalImagePicker/Source/OpalImagePickerConfiguration.swift; sourceTree = "<group>"; };
+		74B05F8DC83D49640DAF6B89321036D1 /* OpalImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpalImagePicker-dummy.m"; sourceTree = "<group>"; };
+		7B1B550169DC9B19E855DEFCE94A70F6 /* OpalImagePickerResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpalImagePickerResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		965CB56949562C448311C9269A1FA278 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OpalImagePicker/SupportingFiles/Assets.xcassets; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A01F46DBDE0B56C8246479A70EBD6333 /* Pods-Neon-Ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Neon-Ios-Info.plist"; sourceTree = "<group>"; };
+		AF3CCE615076C7BF21CB1AC518A8C57A /* ImagePickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerCollectionViewCell.swift; path = OpalImagePicker/Source/ImagePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		B767A737A1DB0982DA068555591FD898 /* OpalImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpalImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpalImagePicker.xcconfig; sourceTree = "<group>"; };
+		C1D5AC9AEF22D93E0E53513B654306A3 /* Pods-Neon-Ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Neon-Ios-umbrella.h"; sourceTree = "<group>"; };
+		C3D39FDC1B79986FC767B5E9AB913607 /* Pods-Neon-Ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Neon-Ios-dummy.m"; sourceTree = "<group>"; };
+		C8318576F251690DC425E9E198917125 /* Pods_Neon_Ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neon_Ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA20DA4B039FA794FE3650C691B28ABA /* OpalImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpalImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC4F923BCA0D693D5A94115C7881B6A8 /* OpalImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OpalImagePicker.modulemap; sourceTree = "<group>"; };
+		D194CEC8265CFCDC6C0FD7B273F32E64 /* Pods-Neon-Ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Neon-Ios.release.xcconfig"; sourceTree = "<group>"; };
+		DA000D9A2A8620AF875B590A6071C08D /* OpalImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OpalImagePicker-Info.plist"; sourceTree = "<group>"; };
+		F6BF66B0F20F5E666211B918DC42B433 /* Pods-Neon-Ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Neon-Ios.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48FECBE7C167B3E796B0DE70A299F408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF56AAA6CDC85C518857C55D9E2D704 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECFCE7233BFEF99072F732B8B176FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C5D26B7EDB4EEA1A2B348467DF3B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E520084A0E23E74F2237B6DE37F61FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428946FD33E0CC84D94E3DD06DC17352 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F923BCA0D693D5A94115C7881B6A8 /* OpalImagePicker.modulemap */,
+				BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */,
+				74B05F8DC83D49640DAF6B89321036D1 /* OpalImagePicker-dummy.m */,
+				DA000D9A2A8620AF875B590A6071C08D /* OpalImagePicker-Info.plist */,
+				35A2522BACC93E4ABABCD6997107452F /* OpalImagePicker-prefix.pch */,
+				CA20DA4B039FA794FE3650C691B28ABA /* OpalImagePicker-umbrella.h */,
+				635F158AD0EC0809CB10D4515B2ED627 /* ResourceBundle-OpalImagePickerResources-OpalImagePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpalImagePicker";
+			sourceTree = "<group>";
+		};
+		7C6C3E2F63BBBFD95B7F219DFBAB35AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				965CB56949562C448311C9269A1FA278 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		935D84130F976D51862BD9C7A468BCCE /* OpalImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				70C97EC05C72DA7E319B11B4C80D97BC /* Bundle+Helper.swift */,
+				AF3CCE615076C7BF21CB1AC518A8C57A /* ImagePickerCollectionViewCell.swift */,
+				1D2978C7ED71B58CA862125DF25C39AA /* OpalImagePickerCollectionViewLayout.swift */,
+				72D5434ACB53570B9BE4FEC7E9C51EEA /* OpalImagePickerConfiguration.swift */,
+				214F8E8C92CB80DEA718350F03111ADC /* OpalImagePickerController.swift */,
+				5D5DE8E895B14EEF0B470D72863FC956 /* OpalImagePickerRootViewController.swift */,
+				64DF8E9B0A6FDAA1C2F4184CF0D2E51E /* TimeInterval+String.swift */,
+				489FB457CFC8B6D1D8E5024DC51A5637 /* UIView+Helper.swift */,
+				2DB5BB9CFF6BBA563DF3327ED69464C1 /* UIViewController+OpalImagePicker.swift */,
+				7C6C3E2F63BBBFD95B7F219DFBAB35AA /* Resources */,
+				428946FD33E0CC84D94E3DD06DC17352 /* Support Files */,
+			);
+			path = OpalImagePicker;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A110D2442F1BF6AAB8C799D0CEF2DBBE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD3B686D2B4AF62E8D42E6F636A251 /* Pods-Neon-Ios */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A1E5CDE13F7CBDEEF8154291087BE28D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				935D84130F976D51862BD9C7A468BCCE /* OpalImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A1E5CDE13F7CBDEEF8154291087BE28D /* Pods */,
+				E78B6C5357E76D49792E280A76F61A9D /* Products */,
+				A110D2442F1BF6AAB8C799D0CEF2DBBE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E78B6C5357E76D49792E280A76F61A9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B767A737A1DB0982DA068555591FD898 /* OpalImagePicker.framework */,
+				7B1B550169DC9B19E855DEFCE94A70F6 /* OpalImagePickerResources.bundle */,
+				C8318576F251690DC425E9E198917125 /* Pods_Neon_Ios.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3AD3B686D2B4AF62E8D42E6F636A251 /* Pods-Neon-Ios */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF66B0F20F5E666211B918DC42B433 /* Pods-Neon-Ios.modulemap */,
+				6AD37E051AB16EE90B169EF4220E5A18 /* Pods-Neon-Ios-acknowledgements.markdown */,
+				505ADCE5CF3156424FD53AFE8F6EF351 /* Pods-Neon-Ios-acknowledgements.plist */,
+				C3D39FDC1B79986FC767B5E9AB913607 /* Pods-Neon-Ios-dummy.m */,
+				2A3FE0207DD2A07113546DD213ACCA96 /* Pods-Neon-Ios-frameworks.sh */,
+				A01F46DBDE0B56C8246479A70EBD6333 /* Pods-Neon-Ios-Info.plist */,
+				C1D5AC9AEF22D93E0E53513B654306A3 /* Pods-Neon-Ios-umbrella.h */,
+				15C0FF37F0F54D964E31F51F5E99C880 /* Pods-Neon-Ios.debug.xcconfig */,
+				D194CEC8265CFCDC6C0FD7B273F32E64 /* Pods-Neon-Ios.release.xcconfig */,
+			);
+			name = "Pods-Neon-Ios";
+			path = "Target Support Files/Pods-Neon-Ios";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1840490E599E9EB99213E7709880A4FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2635D2A22C8C264823CA3A36723D7FF /* Pods-Neon-Ios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E9F9DAB983B544068A61AE7FC22A29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84BC6DFF0977BAF3168F7CDA6D09915 /* OpalImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5BE05ED7D802C5966167BB791D319EA3 /* Pods-Neon-Ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3DBF82EEB17AB82E7A937125751F9D /* Build configuration list for PBXNativeTarget "Pods-Neon-Ios" */;
+			buildPhases = (
+				1840490E599E9EB99213E7709880A4FF /* Headers */,
+				20218CD1F50D0C554464950BC73D58A1 /* Sources */,
+				8ECFCE7233BFEF99072F732B8B176FD4 /* Frameworks */,
+				2D412FE8CC2DDBE8E83991785008FFE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6307A3F90C118ED7CB759BF287316A26 /* PBXTargetDependency */,
+			);
+			name = "Pods-Neon-Ios";
+			productName = "Pods-Neon-Ios";
+			productReference = C8318576F251690DC425E9E198917125 /* Pods_Neon_Ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2785D5CF7DFC28AD2B2980527A89BEC /* OpalImagePicker-OpalImagePickerResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008B3240FE9342B286EDB59020C097AF /* Build configuration list for PBXNativeTarget "OpalImagePicker-OpalImagePickerResources" */;
+			buildPhases = (
+				79B34CF04186B753CEC79AFEE9B6BA5A /* Sources */,
+				E520084A0E23E74F2237B6DE37F61FD8 /* Frameworks */,
+				9498B5E0F2B96BCE2B3E1A824CFB60C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpalImagePicker-OpalImagePickerResources";
+			productName = "OpalImagePicker-OpalImagePickerResources";
+			productReference = 7B1B550169DC9B19E855DEFCE94A70F6 /* OpalImagePickerResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E6B86EB387CB52E290B55FBEE654C289 /* OpalImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB612A657AB78A166C6998BED588B1F /* Build configuration list for PBXNativeTarget "OpalImagePicker" */;
+			buildPhases = (
+				C6E9F9DAB983B544068A61AE7FC22A29 /* Headers */,
+				AA30E20989BF54738C29F702D6C1D3E8 /* Sources */,
+				48FECBE7C167B3E796B0DE70A299F408 /* Frameworks */,
+				1A3525403332F63A89123BA1F3B71C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6DE860F0D6EF74DA5BAC7579087B20 /* PBXTargetDependency */,
+			);
+			name = OpalImagePicker;
+			productName = OpalImagePicker;
+			productReference = B767A737A1DB0982DA068555591FD898 /* OpalImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					E6B86EB387CB52E290B55FBEE654C289 = {
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E78B6C5357E76D49792E280A76F61A9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6B86EB387CB52E290B55FBEE654C289 /* OpalImagePicker */,
+				B2785D5CF7DFC28AD2B2980527A89BEC /* OpalImagePicker-OpalImagePickerResources */,
+				5BE05ED7D802C5966167BB791D319EA3 /* Pods-Neon-Ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A3525403332F63A89123BA1F3B71C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F3BDE792581EE714F299A5F4DD8B9A /* OpalImagePickerResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D412FE8CC2DDBE8E83991785008FFE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9498B5E0F2B96BCE2B3E1A824CFB60C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DC25F509F1D7E1AE7C0CEA2C227A98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20218CD1F50D0C554464950BC73D58A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631C9A541D2D1B96648153E3307FFB1B /* Pods-Neon-Ios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B34CF04186B753CEC79AFEE9B6BA5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA30E20989BF54738C29F702D6C1D3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB8D9720CAF2071E8D78A9B9885C930 /* Bundle+Helper.swift in Sources */,
+				FDFFE10E987082D7FBB85BB46F733BBF /* ImagePickerCollectionViewCell.swift in Sources */,
+				3205BFE4CBB5D54980BB9F526C07C47A /* OpalImagePicker-dummy.m in Sources */,
+				AF65459622DD6E57390655A8C200C11B /* OpalImagePickerCollectionViewLayout.swift in Sources */,
+				B864E097A6D2DA309A0F627C93FFDB28 /* OpalImagePickerConfiguration.swift in Sources */,
+				7F9889F9FE338276600C5A973AE99840 /* OpalImagePickerController.swift in Sources */,
+				2F3FC07A5ACEDA7F06B3A867655DA82C /* OpalImagePickerRootViewController.swift in Sources */,
+				9C7C8A1CF836905B24067AC094520365 /* TimeInterval+String.swift in Sources */,
+				2600A4723C7DB41798CD893DDBB9996C /* UIView+Helper.swift in Sources */,
+				A310A9C50351447E85AE96A80D40B293 /* UIViewController+OpalImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F6DE860F0D6EF74DA5BAC7579087B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpalImagePicker-OpalImagePickerResources";
+			target = B2785D5CF7DFC28AD2B2980527A89BEC /* OpalImagePicker-OpalImagePickerResources */;
+			targetProxy = 9E2D76C20094884379BE73E062C12505 /* PBXContainerItemProxy */;
+		};
+		6307A3F90C118ED7CB759BF287316A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpalImagePicker;
+			target = E6B86EB387CB52E290B55FBEE654C289 /* OpalImagePicker */;
+			targetProxy = 71E7BDF6BFDC320692869ACD37B413F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5BBA44F3522858AC483AAD23E7D04296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C0FF37F0F54D964E31F51F5E99C880 /* Pods-Neon-Ios.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CFD51A346F4837BA3012E605A0E2314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D194CEC8265CFCDC6C0FD7B273F32E64 /* Pods-Neon-Ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Neon-Ios/Pods-Neon-Ios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F5D2942099D16750AA360BD866C1407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpalImagePicker/OpalImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpalImagePicker/OpalImagePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpalImagePicker/OpalImagePicker.modulemap";
+				PRODUCT_MODULE_NAME = OpalImagePicker;
+				PRODUCT_NAME = OpalImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		962A87A82FAB3A447820E56A63F57D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpalImagePicker";
+				INFOPLIST_FILE = "Target Support Files/OpalImagePicker/ResourceBundle-OpalImagePickerResources-OpalImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OpalImagePickerResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD088A68B7E5FE46726D9C60B93E7F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpalImagePicker/OpalImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpalImagePicker/OpalImagePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpalImagePicker/OpalImagePicker.modulemap";
+				PRODUCT_MODULE_NAME = OpalImagePicker;
+				PRODUCT_NAME = OpalImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E83C522D2C2EF10C2BB31749FA8C4EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC130274A27EF7520E7EF4CA075BE791 /* OpalImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpalImagePicker";
+				INFOPLIST_FILE = "Target Support Files/OpalImagePicker/ResourceBundle-OpalImagePickerResources-OpalImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OpalImagePickerResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008B3240FE9342B286EDB59020C097AF /* Build configuration list for PBXNativeTarget "OpalImagePicker-OpalImagePickerResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962A87A82FAB3A447820E56A63F57D39 /* Debug */,
+				E83C522D2C2EF10C2BB31749FA8C4EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB612A657AB78A166C6998BED588B1F /* Build configuration list for PBXNativeTarget "OpalImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5D2942099D16750AA360BD866C1407 /* Debug */,
+				CD088A68B7E5FE46726D9C60B93E7F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3DBF82EEB17AB82E7A937125751F9D /* Build configuration list for PBXNativeTarget "Pods-Neon-Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBA44F3522858AC483AAD23E7D04296 /* Debug */,
+				5CFD51A346F4837BA3012E605A0E2314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
