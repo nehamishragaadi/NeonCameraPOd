@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NeonCameraIos'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'By far the most NeonCameraIos I have seen in my entire life. No joke.'
  
   s.description      = <<-DESC

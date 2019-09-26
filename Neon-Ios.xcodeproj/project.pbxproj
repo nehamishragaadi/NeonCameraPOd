@@ -162,18 +162,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8034EBFB227029E5004ADFB3 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FA2925AD21EF585600D4E6A0 /* ViewController.swift */,
-				8033A2E5225EFAC30027D4FF /* OpenNeutralViewController.swift */,
-				FA363BEB21F03E1500530E58 /* CameraViewController.swift */,
-				8033A2E7225F51070027D4FF /* CameraOnlyViewController.swift */,
-				8033A2E9225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		8034EC29227193B6004ADFB3 /* Neon-Camera App */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,18 +219,43 @@
 		FA2925AA21EF585600D4E6A0 /* Neon-Ios */ = {
 			isa = PBXGroup;
 			children = (
-				FA4015032209628400DD59FF /* util */,
-				FA4015002209612A00DD59FF /* Protocols */,
-				FA4014F522093E6100DD59FF /* Enumerations */,
-				FA305D702201742100F82EFF /* Model */,
 				FA2925AB21EF585600D4E6A0 /* AppDelegate.swift */,
 				8033A2EB22606D9B0027D4FF /* drop-down-arrow.png */,
-				8034EBFB227029E5004ADFB3 /* ViewController */,
 				FA2925AF21EF585600D4E6A0 /* Main.storyboard */,
 				FA2925B221EF586000D4E6A0 /* Assets.xcassets */,
 				FA2925B421EF586100D4E6A0 /* LaunchScreen.storyboard */,
+				FA4015042209629D00DD59FF /* FileInfo.swift */,
+				FA40150622098CB500DD59FF /* GetLocation.swift */,
+				C4ECBFD0220C32C000D06484 /* CustomParameters.swift */,
+				C42A6CBC220D69C200253CAE /* NeonImagesHandler.swift */,
+				FA4015012209614B00DD59FF /* Serializable.swift */,
+				C4ECBFCE220C304B00D06484 /* IParam.swift */,
+				C4ECBFD2220C413900D06484 /* ICameraParam.swift */,
+				C4ECBFDA220C434700D06484 /* IGalleryParam.swift */,
+				C4ECBFDC220C443900D06484 /* INeutralParam.swift */,
+				C42A6CB8220D67F700253CAE /* OnImageCollectionListener.swift */,
+				C42A6CBA220D689900253CAE /* LivePhotosListener.swift */,
+				C42A6CBE220D7BBE00253CAE /* LivePhotoNextTagListener.swift */,
+				FA4014F82209579300DD59FF /* CameraFacing.swift */,
+				FA4014FA220957C900DD59FF /* FlashMode.swift */,
+				FA4014FC2209587F00DD59FF /* ResponseCode.swift */,
+				C4ECBFD4220C41B900D06484 /* CameraOrientation.swift */,
+				C4ECBFD6220C427C00D06484 /* CameraType.swift */,
+				C4ECBFD8220C430400D06484 /* GalleryType.swift */,
+				C4ECBFDE220C481500D06484 /* LibraryMode.swift */,
 				FA2925B721EF586100D4E6A0 /* Info.plist */,
+				FA305D712201746300F82EFF /* ImageTagModel.swift */,
+				C4ECBFE0220C559800D06484 /* PhotosModel.swift */,
+				C42A6CB0220D3ADF00253CAE /* GalleryModel.swift */,
+				C42A6CB2220D3AEF00253CAE /* CameraModel.swift */,
+				C42A6CB4220D3B0400253CAE /* NeutralModel.swift */,
+				C42A6CB6220D4F2000253CAE /* NeonResponse.swift */,
 				FADDC2F021FF011E00E20A2E /* MyImageCell.swift */,
+				FA2925AD21EF585600D4E6A0 /* ViewController.swift */,
+				8033A2E5225EFAC30027D4FF /* OpenNeutralViewController.swift */,
+				FA363BEB21F03E1500530E58 /* CameraViewController.swift */,
+				8033A2E7225F51070027D4FF /* CameraOnlyViewController.swift */,
+				8033A2E9225F58660027D4FF /* SelectImgCameraCollectionViewCell.swift */,
 			);
 			path = "Neon-Ios";
 			sourceTree = "<group>";
@@ -263,59 +276,6 @@
 				FA2925CD21EF586100D4E6A0 /* Info.plist */,
 			);
 			path = "Neon-IosUITests";
-			sourceTree = "<group>";
-		};
-		FA305D702201742100F82EFF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FA305D712201746300F82EFF /* ImageTagModel.swift */,
-				C4ECBFE0220C559800D06484 /* PhotosModel.swift */,
-				C42A6CB0220D3ADF00253CAE /* GalleryModel.swift */,
-				C42A6CB2220D3AEF00253CAE /* CameraModel.swift */,
-				C42A6CB4220D3B0400253CAE /* NeutralModel.swift */,
-				C42A6CB6220D4F2000253CAE /* NeonResponse.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FA4014F522093E6100DD59FF /* Enumerations */ = {
-			isa = PBXGroup;
-			children = (
-				FA4014F82209579300DD59FF /* CameraFacing.swift */,
-				FA4014FA220957C900DD59FF /* FlashMode.swift */,
-				FA4014FC2209587F00DD59FF /* ResponseCode.swift */,
-				C4ECBFD4220C41B900D06484 /* CameraOrientation.swift */,
-				C4ECBFD6220C427C00D06484 /* CameraType.swift */,
-				C4ECBFD8220C430400D06484 /* GalleryType.swift */,
-				C4ECBFDE220C481500D06484 /* LibraryMode.swift */,
-			);
-			path = Enumerations;
-			sourceTree = "<group>";
-		};
-		FA4015002209612A00DD59FF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FA4015012209614B00DD59FF /* Serializable.swift */,
-				C4ECBFCE220C304B00D06484 /* IParam.swift */,
-				C4ECBFD2220C413900D06484 /* ICameraParam.swift */,
-				C4ECBFDA220C434700D06484 /* IGalleryParam.swift */,
-				C4ECBFDC220C443900D06484 /* INeutralParam.swift */,
-				C42A6CB8220D67F700253CAE /* OnImageCollectionListener.swift */,
-				C42A6CBA220D689900253CAE /* LivePhotosListener.swift */,
-				C42A6CBE220D7BBE00253CAE /* LivePhotoNextTagListener.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FA4015032209628400DD59FF /* util */ = {
-			isa = PBXGroup;
-			children = (
-				FA4015042209629D00DD59FF /* FileInfo.swift */,
-				FA40150622098CB500DD59FF /* GetLocation.swift */,
-				C4ECBFD0220C32C000D06484 /* CustomParameters.swift */,
-				C42A6CBC220D69C200253CAE /* NeonImagesHandler.swift */,
-			);
-			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
